@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/normalize.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>comment System JS, TypeScript</title>
+</head>
+
+<body class="body">
+
+    <header class="header"></header>
+    
+    <div class="primary-container">
+
+        <aside class="aside"></aside>
+
+        <main class="main">
+
+            <div class="secondary-container">
+
+                <div class="block-group">
+
+                    <div class="block-group-1">
+                        <div class="block-s"></div>
+                        <div class="block-s"></div>
+                        <div class="block-s"></div>
+                        <div class="block-s"></div>
+                    </div>
+
+                    <div class="block-group-2">
+                        <div class="block-s"></div>
+                        <div class="block-s"></div>
+                        <div class="block-s"></div>
+                        <div class="block-s"></div>
+                    </div>
+
+                </div>
+
+                <div class="block-m"></div>
+
+                <div class="comment-nav">
+
+                    <span class="comment-nav-header">Комментарии <span class="comment-num text-opacity"></span></span>
+
+                    <div class="comment-nav-list">
+
+                        <div class="nav-default">
+
+                            <span class="comment-nav-list__item--drop drop-default text-opacity">По дате</span>
+                            <img class="nav-image nav-arrow" src="./src/images/icons/arrow-down.svg" title="По убыванию" alt="Сортировка">
+
+                            <ul class="comment-nav-drop">
+                    
+                                <li class="comment-nav-list__item--drop drop-choose" id="comment-date"><img class="mark-image" src="./src/images/icons/mark.svg" alt="mark">По дате</li>
+                                <li class="comment-nav-list__item--drop drop-choose" id="comment-rate"><img class="mark-image" src="./src/images/icons/mark.svg" alt="mark">По количеству оценок</li>
+                                <li class="comment-nav-list__item--drop drop-choose" id="comment-answers"><img class="mark-image" src="./src/images/icons/mark.svg" alt="mark">По количеству ответов</li>
+                            
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="nav-default favorite-list btn-favorite">
+
+                        <span class="comment-nav-favorite text-underline">Избранное</span>
+                        <img class="nav-image" src="./src/images/icons/favorite.svg" alt="favorite">
+                        
+                    </div>
+
+                </div>
+
+                <div class="write-block">
+
+                    <div class="write-block-area">
+
+                        <div class="header-area-avatar">
+
+                            <img class="write-block-area__avatar" src="#" alt="avatar">
+
+                        </div>
+   
+                        <div class="header-area">
+
+                            <div class="send-area-header">
+                                <div class="header-area__author"></div>
+                                <div class="header-area__maxletters"></div>
+                            </div>
+
+                            <input class="send-area__input" type="text" placeholder="Введите текст сообщения...">
+
+                        </div>
+
+                        <div class="send-area-button">
+                            <div class="header-area__error"></div>
+                            <button class="send-area__btn" disabled type="button">Отправить</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <div class="comment-list"></div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="./dist/main.js" type="module"></script>
+
+</body>
+
+</html>
+
