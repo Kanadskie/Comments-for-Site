@@ -1,7 +1,7 @@
-import Comment from "./coment"
-import Answers from "./answers"
-import Rated from "./rated"
-import Favorite from "./favorite"
+import Comment from "./types/coment"
+import Answers from "./types/answers"
+import Rated from "./types/rated"
+import Favorite from "./types/favorite"
 
 import { currentUser } from "./app"
 import { app } from "./app"
